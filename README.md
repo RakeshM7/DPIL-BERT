@@ -38,6 +38,8 @@ Executing BERT:
 
 Classification:
 
+NOTE: Run this code only when the results of all the algorithms for all the languages are available
+
 After all the algorithms return the results , the results are fetched and processed as required for classification.
 
 How the results are predicted and classified?
