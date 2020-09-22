@@ -23,7 +23,7 @@ For the algorithm to operate on the date , preprocessing has to be done to conve
 Executing BERT:
 
 
-0.Save the dataset in Google drive
+0. Save the dataset in Google drive
 1. Open BERT.ipynb file in Google colabaratory.
 2. Enter the task and language name.
 3. Specify the datapath of where the training data is.
@@ -34,6 +34,25 @@ Executing BERT:
 8. Change the learning rate and number of epochs if you wish to.
 9. Run all the blocks: Runtime -> Run all
 10. The result file is saved as text file(.txt) in results folder and reults are returned in logits ( will be converted to probabilities in final execution code).
+
+Executing USE:
+
+
+0. Download all the zip files and extract it.
+1. Upload all the extracted file to the Google drive under a folder for each.
+   Example: All train dataset under folder Train XML File and all test dataset under Text Excel File.
+2. Open Datapreprocessing.ipynb under USE and run the code in Google colabaratory and check for the folder of saving .txt file
+   Example: Create a separate folder for task 1 and task2 of each language---->Hindi Task 1,Tamil Task 2 etc.
+3. Make sure all the folder are in correct name.
+4. Open USE.ipynb file in Google colabaratory.
+5. Specify the datapath of where the training data is.
+6. Specify the path of the testdata if prompted; by default, the testdata is fetched from testdata folder.
+7. Specify where the model has to be saved; by default, the model is saved in model folder.
+8. Specify where the results has to be saved;
+9. Specify the path where the actual labels of the test data should be stored
+10. Change the learning rate and number of epochs if you wish to.
+11. Run all the blocks: Runtime -> Run all
+12. The result file is saved as text file(.txt) in results folder and reults are returned in logits ( will be converted to probabilities in final execution code).
 
 
 Classification:
