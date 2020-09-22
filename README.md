@@ -22,20 +22,38 @@ For the algorithm to operate on the date , preprocessing has to be done to conve
 
 Executing BERT:
 
+NOTE : Steps 2 to 6 are not necessary as the data path is hardcoded to be in the default directory
+0.Save the dataset in Google drive
 1. Open BERT.ipynb file in Google colabaratory.
 2. Enter the task and language name.
-3. << Not required >> Specify the datapath of where the training data is. ( here the data path is hardcoded)
-4. << Not required >> Specify the path of the testdata if prompted; by default, the testdata is fetched from testdata folder.
-5. << Not required >> Specify where the model has to be saved; by default, the model is saved in model folder.
-6. << Not required >> Specify where the results has to be saved;
+3. Specify the datapath of where the training data is.
+4. Specify the path of the testdata if prompted; by default, the testdata is fetched from testdata folder.
+5. Specify where the model has to be saved; by default, the model is saved in model folder.
+6. Specify where the results has to be saved;
 7. Change the learning rate and number of epochs if you wish to.
 8. Run all the blocks: Runtime -> Run all
 9. The result file is saved as text file(.txt) in results folder and reults are returned in logits ( will be converted to probabilities in final execution code).
 
 
-
 Classification:
 
 After all the algorithms return the results , the results are fetched and processed as required for classification.
-1. 
-<<TODO>>
+
+How the results are predicted and classified?
+
+The probability scores of each of the algorithm is compared. The highest probability score is taken and the prediction corresponding to that probability score if considered as the output.
+
+Consider a example for task1 for a sequence,
+  1. BERT score of a prediction is 0.12 for P and 0.88 for NP
+  2. Seq2Seq score is 0.67 for P and 0.33 for NP
+  3. USE score is 0.11 for P and 0.89 for NP.
+Since USE score for NP is the highest compared to the other scores, the output class label is taken as non-paraphrase. Similarly the output is computed in task2.
+
+Classifier execution:
+
+1.Specify the path where the output files are saved and execute the program. Runtime -> Run all
+
+The output reults will be displayed with accuracy and confusion matrix.
+  
+
+
