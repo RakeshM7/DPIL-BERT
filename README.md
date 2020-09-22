@@ -22,7 +22,7 @@ For the algorithm to operate on the date , preprocessing has to be done to conve
 
 Executing BERT:
 
-NOTE : Steps 2 to 7 are not necessary as the data path is hardcoded to be in the default directory
+
 0.Save the dataset in Google drive
 1. Open BERT.ipynb file in Google colabaratory.
 2. Enter the task and language name.
