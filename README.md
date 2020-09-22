@@ -22,7 +22,7 @@ For the algorithm to operate on the date , preprocessing has to be done to conve
 
 Executing BERT:
 
-NOTE : Steps 2 to 6 are not necessary as the data path is hardcoded to be in the default directory
+NOTE : Steps 2 to 7 are not necessary as the data path is hardcoded to be in the default directory
 0.Save the dataset in Google drive
 1. Open BERT.ipynb file in Google colabaratory.
 2. Enter the task and language name.
@@ -30,9 +30,10 @@ NOTE : Steps 2 to 6 are not necessary as the data path is hardcoded to be in the
 4. Specify the path of the testdata if prompted; by default, the testdata is fetched from testdata folder.
 5. Specify where the model has to be saved; by default, the model is saved in model folder.
 6. Specify where the results has to be saved;
-7. Change the learning rate and number of epochs if you wish to.
-8. Run all the blocks: Runtime -> Run all
-9. The result file is saved as text file(.txt) in results folder and reults are returned in logits ( will be converted to probabilities in final execution code).
+7. Specify the path where the actual labels of the test data should be stored
+8. Change the learning rate and number of epochs if you wish to.
+9. Run all the blocks: Runtime -> Run all
+10. The result file is saved as text file(.txt) in results folder and reults are returned in logits ( will be converted to probabilities in final execution code).
 
 
 Classification:
