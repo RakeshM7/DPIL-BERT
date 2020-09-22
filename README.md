@@ -50,7 +50,7 @@ Consider a example for task1 for a sequence,
 Since USE score for NP is the highest compared to the other scores, the output class label is taken as non-paraphrase. Similarly the output is computed in task2.
 
 Classifier execution:
-
+0. Open Final_classifier.ipynb in Google colab
 1.Specify the path where the output files are saved and execute the program. Runtime -> Run all
 
 The output reults will be displayed with accuracy and confusion matrix.
