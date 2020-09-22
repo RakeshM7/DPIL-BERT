@@ -57,6 +57,8 @@ Executing USE:
 
 Classification:
 
+NOTE: Run this code only when all the reuslts of all algorithms are available
+
 After all the algorithms return the results , the results are fetched and processed as required for classification.
 
 How the results are predicted and classified?
